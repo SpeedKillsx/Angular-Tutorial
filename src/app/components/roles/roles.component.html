@@ -1,0 +1,22 @@
+<p>roles works!</p>
+<div class="row">
+   <div class="col-3"> <p>First Name : {{firstName}} </p></div>
+   <div class="col-3">   Angular version : {{angularVersion}}   </div>
+   <div class="col-3"><p>
+      Date : {{currentDate}}
+   </p></div>
+</div>
+<div class="row">
+      <div class="col-3">
+         <input type="text" [value]="firstName" class="form-control">
+      </div>
+</div>
+
+<div class="col-3">
+   
+   <input type="text" [value]="firstName" [(ngModel)]="firstName">
+</div>
+<div class="col-3">
+   <input [type]="inputType">
+</div>
+
