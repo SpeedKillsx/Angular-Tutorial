@@ -1,22 +1,19 @@
-<p>roles works!</p>
 <div class="row">
-   <div class="col-3"> <p>First Name : {{firstName}} </p></div>
-   <div class="col-3">   Angular version : {{angularVersion}}   </div>
-   <div class="col-3"><p>
-      Date : {{currentDate}}
-   </p></div>
+   <div class="col-12"> 
+      <table class="table table-bordered">
+         <thead class="thead-dark">
+            <tr>
+               <th scope="col"> ID </th>
+               <th scope="col"> Role</th>
+            </tr>
+            
+         </thead>
+         <tbody *ngFor="let role of roleList">
+            <tr>
+                  <td>{{role.roleId}}</td>
+                  <td>{{role.role}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
 </div>
-<div class="row">
-      <div class="col-3">
-         <input type="text" [value]="firstName" class="form-control">
-      </div>
-</div>
-
-<div class="col-3">
-   
-   <input type="text" [value]="firstName" [(ngModel)]="firstName">
-</div>
-<div class="col-3">
-   <input [type]="inputType">
-</div>
-

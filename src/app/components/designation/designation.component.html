@@ -1,1 +1,28 @@
-<p>designation works!</p>
+<div class="row">
+
+    <div class="col-13 text-center" *ngIf="isLoader == true">
+        <div class="spinner-border"></div>
+
+    </div>
+    <div class="col-12" *ngIf="isLoader == false">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Designation ID</th>
+                    <th scope="col">Designation</th>
+                </tr>
+            </thead>
+            
+            <tbody >
+                @for (designation of designationList; track $index) {
+
+                    <tr >
+                        <td>{{designation.designationId}}</td>
+                        <td>{{designation.designation}}</td>
+                    </tr>
+                }
+            </tbody>
+            
+        </table>
+    </div>
+</div>
