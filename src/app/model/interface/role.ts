@@ -9,6 +9,8 @@ export interface IDesigniation{
 
 }
 
+
+
 export interface APIResponseModel{
     message:string;
     result:boolean;
