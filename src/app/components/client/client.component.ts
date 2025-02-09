@@ -19,7 +19,7 @@ export class ClientComponent implements OnInit{
   ngOnInit(): void {
       this.clientService.getAllClients().subscribe((res:APIResponseModel)=>{
         this.clientList = res.data;
-        console.log(res.data);
+        console.log(res);
       }, error=>{
         console.log('Network shut down!');
         console.log('ERROR :', error);
