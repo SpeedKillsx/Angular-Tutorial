@@ -22,7 +22,7 @@ export class ClientComponent implements OnInit{
         console.log(res.data);
       }, error=>{
         console.log('Network shut down!');
-        console.log('ERROR:', error);
+        console.log('ERROR :', error);
       })
   }
 
