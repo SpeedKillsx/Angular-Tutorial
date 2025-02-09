@@ -25,5 +25,4 @@ export class ClientComponent implements OnInit{
         console.log('ERROR :', error);
       })
   }
-
 }
