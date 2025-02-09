@@ -21,7 +21,7 @@ export class ClientComponent implements OnInit{
         this.clientList = res.data;
         console.log(res.data);
       }, error=>{
-        console.log('Network shut down');
+        console.log('Network shut down!');
         console.log('ERROR:', error);
       })
   }
